@@ -5,9 +5,9 @@ def print_pattern(n):
                     # first row
                     (row == 0 and column != 0 and column != n - 1) or
                     # first column
-                    (column == 0 and row != 0) or
+                    (column == 0 and row < n //2 and row != 0 ) or
                     # middle row
-                    (row == n//2 and column != n-1) or
+                    (row == n//2 and column != n-1 and column != 0 ) or
                     # last column
                     (column == n-1 and row < n//2 and row != 0) or
                     # R tail
